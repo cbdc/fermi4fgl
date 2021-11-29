@@ -211,7 +211,7 @@
   </table>
 
   <data id="import">
-    <sources>f4fgl.fits</sources>
+    <sources>f4fgldr2.fits</sources>
 
     <fitsTableGrammar/>
 
