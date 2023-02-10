@@ -121,7 +121,13 @@
     <column name="Flux7" type="real"
       unit="ph cm-2 s-1" ucd="phot.flux;em.gamma.hard"
       tablehead="Photon flux band 7" verbLevel="1"
-      description="Photon flux between 30-300 GeV"
+      description="Photon flux between 30-100 GeV"
+      required="True"/>
+
+    <column name="Flux8" type="real"
+      unit="ph cm-2 s-1" ucd="phot.flux;em.gamma.hard"
+      tablehead="Photon flux band 8" verbLevel="1"
+      description="Photon flux between 100-1000 GeV"
       required="True"/>
 
     <column name="UncL_Flux1" type="real"
@@ -199,19 +205,32 @@
     <column name="UncL_Flux7" type="real"
       unit="ph cm-2 s-1" ucd="stat.error;phot.flux;em.gamma.hard"
       tablehead="Photon flux Error band 7" verbLevel="1"
-      description="Photon flux lower error between 30-300 GeV"
+      description="Photon flux lower error between 30-100 GeV"
       required="True"/>
 
     <column name="UncU_Flux7" type="real"
       unit="ph cm-2 s-1" ucd="stat.error;phot.flux;em.gamma.hard"
       tablehead="Photon flux Error band 7" verbLevel="1"
-      description="Photon flux upper error between 30-300 GeV"
+      description="Photon flux upper error between 30-100 GeV"
       required="True"/>
+
+    <column name="UncL_Flux8" type="real"
+      unit="ph cm-2 s-1" ucd="stat.error;phot.flux;em.gamma.hard"
+      tablehead="Photon flux Error band 8" verbLevel="1"
+      description="Photon flux lower error between 100-1000 GeV"
+      required="True"/>
+
+    <column name="UncU_Flux8" type="real"
+      unit="ph cm-2 s-1" ucd="stat.error;phot.flux;em.gamma.hard"
+      tablehead="Photon flux Error band 8" verbLevel="1"
+      description="Photon flux upper error between 100-1000 GeV"
+      required="True"/>
+
 
   </table>
 
   <data id="import">
-    <sources>f4fgl.fits</sources>
+    <sources>f4fgldr3.fits</sources>
 
     <fitsTableGrammar/>
 
